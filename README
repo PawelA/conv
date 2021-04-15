@@ -1,0 +1,12 @@
+Assignment for an operating systems class.
+
+The task was to write a 32-bit to 64-bit ET_REL ELF converter.
+The converter takes in a list of function signatures and inserts
+appropriate stubs for switching between 32 and 64 bit modes.
+
+The files test.c, shuf.c, and the makefile demonstrate the usage.
+Notice how the 32-bit function shuffle uses an external 64-bit
+function from the C stdandard library.
+
+The file stub.s is a reference for the stub generator. stub.c
+simply runs the main function from stub.s.
